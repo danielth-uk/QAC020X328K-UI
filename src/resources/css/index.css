@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    background: linear-gradient(90deg, #141010 (22px - 1px), transparent 1%) center;
+    background-size: 22px 22px;
+}
+
+samp {
+    white-space: pre-wrap;
+    /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+}
+
+.quill-textarea svg {
+    filter: invert(98%) sepia(1%) saturate(1918%) hue-rotate(186deg) brightness(96%) contrast(92%);
+}
+
+.quill-textarea .ql-picker-label {
+    color: #e5e7eb
+}
+
+.quill-textarea .ql-container.ql-snow {
+    border: none
+}
+
+.quill-textarea .ql-toolbar.ql-snow {
+    border: none
+}
+
+.quill-textarea .ql-editor {
+    min-height: 150px;
+    max-height: 30vh;
+}
+
+.quill-comment .ql-editor {
+    min-height: 0px;
+}
+
+.hide-toolbar .ql-toolbar {
+    display: none;
+}
+
+.introjs-tooltiptext {
+    color: hsl(var(--pf)) !important
+}
+
+.introjs-tooltip {
+    background-color: hsl(var(--s)) !important;
+}
+
+.introjs-arrow {
+    border-bottom-color: hsl(var(--s)) !important;
+}
